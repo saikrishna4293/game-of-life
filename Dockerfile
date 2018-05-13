@@ -4,5 +4,6 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 COPY /gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/ROOT.war
 
+CMD "echo" "Almost Done"
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
